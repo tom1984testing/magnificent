@@ -44,7 +44,7 @@ public class ServiceStatusRecorder implements Runnable {
         logger.info("total success requests, num: {}", totalSuccessRequests.get());
         logger.info("total failure requests, num: {}", totalFailureRequests.get());
         if (totalRequests.get() > 0) {
-            logger.info("success ratio, num: {}", totalFailureRequests.get()*100.0 / totalRequests.get());
+            logger.info("success ratio, num: {}", totalSuccessRequests.get()*100.0 / totalRequests.get());
         }
         for (int code : failureRequestsByCode.keySet()) {
             logger.info("total failure requests by code, code: {}, num: {}", code, failureRequestsByCode.get(code));
