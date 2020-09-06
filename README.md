@@ -1,8 +1,8 @@
-0. download the magnificent.jar and unzip
-1 tar -xvf  magnificent.jar
-2. cd magnificent
-3. mvn clean install
-4. cd target
-5. tar -xvf magnificent-${date}.tar.gz
-6. cd  magnificent
-7.  java -jar dist/magnificent.jar
+1. cd magnificent
+2. mvn clean install
+3. cd target
+4. tar -xvf magnificent-${date}.tar.gz
+5. cd  magnificent
+6. java -jar dist/magnificent.jar
+
+you can see the logs from target.
